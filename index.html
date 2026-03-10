@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 생산성 동물 테스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        
+        <!-- Header -->
+        <header class="header">
+            <h1 class="header__title">나의 생산성<br>동물 테스트</h1>
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+            
+            <!-- 1. Start View -->
+            <section id="js-view-start" class="view view--start">
+                <div class="card card--intro">
+                    <div class="intro__icon">�</div>
+                    <p class="intro__desc">
+                        몇 가지 질문에 답하면<br>
+                        나의 생산성 스타일을 동물로 알려드려요!
+                    </p>
+                    <button id="js-btn-start" class="btn btn--primary">테스트 시작하기 🚀</button>
+                </div>
+            </section>
+
+            <!-- 2. Question View -->
+            <section id="js-view-question" class="view view--question u-hidden">
+                <div class="card card--question">
+                    <div class="progress">
+                        <p id="js-progress-text" class="progress__text">Question 1/5</p>
+                        <div class="progress__bar">
+                            <div id="js-progress-fill" class="progress__fill"></div>
+                        </div>
+                    </div>
+                    <h2 id="js-question-text" class="question__text">질문 데이터 로딩 중...</h2>
+                    <div id="js-answer-list" class="question__answers">
+                        <!-- Answers will be rendered here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Result View -->
+            <section id="js-view-result" class="view view--result u-hidden">
+                <div class="card card--result">
+                    <p class="result__type">나의 생산성 동물 스타일은?</p>
+                    <h3 id="js-result-name" class="result__name">완벽주의 토끼</h3>
+                    <img id="js-result-image" src="" alt="Result Animal" class="result__image">
+                    <div id="js-result-desc" class="result__desc">
+                        <!-- Descriptions will be rendered here -->
+                    </div>
+                    <button id="js-btn-share" class="btn btn--accent">결과 공유하기 📤</button>
+                    <button id="js-btn-retry" class="btn btn--secondary">다시 테스트하기</button>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 나의 생산성 동물 테스트<br>Designed by Antigravity</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
